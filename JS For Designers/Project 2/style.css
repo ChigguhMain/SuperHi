@@ -60,6 +60,13 @@ main {
     transition: transform 0.5s;
 }
 
-.main-toggle {
+main.open {
     transform: translateX(240px);
+}
+
+main a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* This seems to not be working */
 }
