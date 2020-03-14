@@ -87,6 +87,18 @@ section div {
     width: 350px;
 }
 
+section div.slides {
+    height: 475px;
+}
+
+section div.slides img {
+    position: absolute;
+}
+
+section div.slides img:nth-child(1) {
+    z-index: 1;
+}
+
 section div.content {
     margin-left: 60px;
 }
