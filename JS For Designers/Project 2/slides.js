@@ -9,7 +9,11 @@ let z = 1;
 imageContainer.addEventListener("click", function(){
     slideNumber = slideNumber + 1;
     z = z + 1;
+    
+    if(slideNumber > images.length - 1){
+        slideNumber = 0;
+    }
 
     images[slideNumber].style.zIndex = z;
-    
-})
+    images[slideNumber].style.animation = "fade 0.5s";
+});
