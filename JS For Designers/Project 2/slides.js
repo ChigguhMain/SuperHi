@@ -27,9 +27,16 @@ imageContainer.addEventListener("click", function(){
 // On mouseover, move the images to random positions
 imageContainer.addEventListener("mouseenter", function(){
     images.forEach(function(image){
+        
+        /* Not snapping to a grid
         const randX = 100 * Math.random() -50;
         const randY = 100 * Math.random() -50;
+        */
 
+        // Snapping to a grid based on 0, 25, 50, 75
+        const randX = 25 * (Math.floor(Math.random() * 5)) - 50;
+        const randY = 25 * (Math.floor(Math.random() * 5)) - 50;
+        
         image.style.transform = `translate(${randX}px, ${randY}px)`;
     });
 });
