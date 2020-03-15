@@ -99,6 +99,7 @@ section div.slides {
 
 section div.slides img {
     position: absolute;
+    transition: transform 0.5s;
 }
 
 section div.slides img:nth-child(1) {
