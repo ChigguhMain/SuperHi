@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: "IBM Plex Mono";
-    src: url("/JS For Designers/Project 2/assets/ibm-plex-mono.woff2"), url("/JS For Designers/Project 2/assets/ibm-plex-mono.woff");
+    src: url("/JS-For-Designers/Project-2/assets/ibm-plex-mono.woff2"), url("/JS-For-Designers/Project-2/assets/ibm-plex-mono.woff");
 }
 
 @font-face {
     font-family: "Young Serif";
-    src: url("/JS For Designers/Project 2/assets/youngserif.woff2"), url("/JS For Designers/Project 2/assets/youngserif.woff");
+    src: url("/JS-For-Designers/Project-2/assets/youngserif.woff2"), url("/JS-For-Designers/Project-2/assets/youngserif.woff");
 }
 
 * {
