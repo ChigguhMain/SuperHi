@@ -1,20 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Faune";
     font-weight: 400;
-    src: url(/JS-For-Designers/Project-3/assets/faune-regular.woff2);
+    src: url(/JS-For-Designers/Project-3/assets/faune-regular.woff2), url(/JS-For-Designers/Project-3/assets/faune-regular.woff);
+}
+
+@font-face {
+    font-family: "Faune";
+    font-weight: 400;
+    font-style: italic;
+    src: url(/JS-For-Designers/Project-3/assets/faune-italic.woff2), url(/JS-For-Designers/Project-3/assets/faune-italic.woff);
+}
+
+@font-face {
+    font-family: "Faune";
+    font-weight: 700;
+    src: url(/JS-For-Designers/Project-3/assets/faune-bold.woff2), url(/JS-For-Designers/Project-3/assets/faune-bold.woff);
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Faune", Arial;
     font-size: 16px;
     line-height: 1.5;
 
-    background-color: #ffffff;
-    color: #333333;
-    margin: 40px auto;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    margin: 40px 40px 40px 280px;
+}
+
+section.options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    padding: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 h1 {
-    font-size: 24px;
     font-weight: 700;
+    font-size: 24px;
+}
+
+div.option {
+    margin: 10px 0 0 0;
+}
+
+label {
+    display: block;
+    margin: 0 0 5px 0;
+} 
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 8px;
+    background: #575757;
+    border: none;
+    font-size: 16px;
+    color: white;
+    
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+section.output {
+    margin-left: 40px;
+    font-size: 64px;
 }
