@@ -71,8 +71,14 @@ input[type="text"]::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
 
-section.output {
+textarea.output {
     margin-left: 40px;
     font-size: 64px;
+    width: 100%;
+    height: 100vh;
+    background: none;
+    color: white;
+    border: none;
+    font-family: inherit;
 }
 
