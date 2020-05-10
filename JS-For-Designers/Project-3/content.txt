@@ -22,3 +22,7 @@ Initial copy:
 The quick brown fox jumps over the lazy dog
 https://en.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog
 
+Sidenote for how to use git: 
+    1) git add .
+    2) git commit -m “This is your commit message”
+    3) git push
