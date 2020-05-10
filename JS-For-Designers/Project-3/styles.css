@@ -89,5 +89,6 @@ textarea.output {
     color: white;
     border: none;
     font-family: inherit;
+    transition: line-height 0.3s;
 }
 
