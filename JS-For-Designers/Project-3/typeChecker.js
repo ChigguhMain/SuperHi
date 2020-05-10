@@ -1,4 +1,6 @@
-const sentenceTag = document.querySelector("input[type='text']");
+const sentenceTag = document.querySelector("input[name='sentence']");
+const typesizeTag = document.querySelector("input[name='typesize']");
+const typesizeOutput = document.querySelector("span.typesize-output");
 const outputTag = document.querySelector("textarea.output");
 const ogText = outputTag.value;
 
@@ -20,4 +22,11 @@ sentenceTag.addEventListener("keyup", function() {
 
 outputTag.addEventListener("keyup", function() {
   sentenceTag.value = this.value;
+})
+
+// When I change my typesize slider, update the text next to it AND
+// Update the outputTag's font size. 
+typesizeTag.addEventListener("input", function() {
+  outputTag.style.fontSize = this.value + "px";
+  typesizeOutput.innerHTML = this.value + "px";
 })
