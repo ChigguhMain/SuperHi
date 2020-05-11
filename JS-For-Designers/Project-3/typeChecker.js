@@ -70,7 +70,7 @@ fontweightTag.addEventListener("input", function () {
 
 // Every color that is clicked, update the bodyTag background color AND
 // the outputTag text color.
-colourTags.forEach(function (tag) {
+colourTags.forEach(tag => {
   tag.addEventListener("click", function () {
     outputTag.style.color = this.style.color;
     outputTag.style.background = this.style.background;
