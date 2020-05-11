@@ -1,14 +1,13 @@
-// Input
+// Inputs
 const sentenceTag = document.querySelector("input[name='sentence']");
-
-// Options for adjusting text style
+const typefaceTag = document.querySelector("select[name='typeface']");
 const typesizeTag = document.querySelector("input[name='typesize']");
 const lineheightTag = document.querySelector("input[name='lineheight']");
 const italicTag = document.querySelector("input[name='italic']");
+
+// Outputs
 const lineheightOutput = document.querySelector("span.lineheight-output");
 const typesizeOutput = document.querySelector("span.typesize-output");
-
-// Output
 const outputTag = document.querySelector("textarea.output");
 const ogText = outputTag.value;
 
@@ -52,4 +51,9 @@ italicTag.addEventListener("change", function () {
   } else {
     outputTag.style.fontStyle = "normal";
   }
+});
+
+// When I change my select for typeface, update the font family
+typefaceTag.addEventListener("input", function () {
+  outputTag.style.fontFamily = this.value;
 });
