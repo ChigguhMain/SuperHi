@@ -69,10 +69,18 @@ fontweightTag.addEventListener("input", function () {
 });
 
 // Every color that is clicked, update the bodyTag background color AND
-// the outputTag text color.
+// the outputTag text color AND 
+// make this tag be selected
 colourTags.forEach(tag => {
   tag.addEventListener("click", function () {
     outputTag.style.color = this.style.color;
     outputTag.style.background = this.style.background;
+
+    // Reset the classes
+    colourTags.forEach(tag => {
+      tag.classList.remove("selected");
+    })
+    // Add selected class
+    this.classList.add("selected");
   });
 });

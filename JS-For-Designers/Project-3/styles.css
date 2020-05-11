@@ -114,4 +114,9 @@ div.colours div {
     text-align: center;
     margin: 5px;
     cursor: pointer;
+    transition: border 0.3s;
+}
+
+div.colours div.selected {
+    border: 2px solid #ffffff;
 }
