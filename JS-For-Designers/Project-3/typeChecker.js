@@ -5,6 +5,7 @@ const typesizeTag = document.querySelector("input[name='typesize']");
 const fontweightTag = document.querySelector("input[name='fontweight']");
 const lineheightTag = document.querySelector("input[name='lineheight']");
 const italicTag = document.querySelector("input[name='italic']");
+const colourTags = document.querySelectorAll(".colours div");
 
 // Outputs
 const lineheightOutput = document.querySelector("span.lineheight-output");
@@ -65,4 +66,13 @@ typefaceTag.addEventListener("input", function () {
 fontweightTag.addEventListener("input", function () {
   outputTag.style.fontWeight = this.value;
   fontweightOutput.innerHTML = this.value;
+});
+
+// Every color that is clicked, update the bodyTag background color AND
+// the outputTag text color.
+colourTags.forEach(function (tag) {
+  tag.addEventListener("click", function () {
+    outputTag.style.color = this.style.color;
+    outputTag.style.background = this.style.background;
+  });
 });
