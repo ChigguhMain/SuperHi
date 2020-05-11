@@ -2,12 +2,14 @@
 const sentenceTag = document.querySelector("input[name='sentence']");
 const typefaceTag = document.querySelector("select[name='typeface']");
 const typesizeTag = document.querySelector("input[name='typesize']");
+const fontweightTag = document.querySelector("input[name='fontweight']");
 const lineheightTag = document.querySelector("input[name='lineheight']");
 const italicTag = document.querySelector("input[name='italic']");
 
 // Outputs
 const lineheightOutput = document.querySelector("span.lineheight-output");
 const typesizeOutput = document.querySelector("span.typesize-output");
+const fontweightOutput = document.querySelector("span.fontweight-output");
 const outputTag = document.querySelector("textarea.output");
 const ogText = outputTag.value;
 
@@ -56,4 +58,11 @@ italicTag.addEventListener("change", function () {
 // When I change my select for typeface, update the font family
 typefaceTag.addEventListener("input", function () {
   outputTag.style.fontFamily = this.value;
+});
+
+// When I change the font weight slider, update the outputTag font weight AND
+// Update the font weight label
+fontweightTag.addEventListener("input", function () {
+  outputTag.style.fontWeight = this.value;
+  fontweightOutput.innerHTML = this.value;
 });
