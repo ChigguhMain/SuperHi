@@ -23,3 +23,75 @@ header {
     left: 36px;
     z-index: 1;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c8dee0;
+    min-height: 100vh;
+    padding: 80px;
+}
+
+div.content {
+    position: relative;
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    background: #d54156;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+div.circle {
+    width: 100px;
+    height: 100px;
+    background: #5982a0;
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    border-radius: 50%;
+}
+
+div.content img {
+    position: relative;
+}
+
+.s2 {
+    background: #c5c5c5;
+}
+
+.s2 div.square {
+    background: #d6ac35;
+}
+
+.s2 div.circle {
+    background: #be3c52;
+}
+
+.s3 {
+    background: #292121;
+}
+
+.s3 div.square {
+    background: #5f3736;
+}
+
+.s3 div.circle {
+    background: #6e5f67;
+}
+
+.s4 {
+    background: #f3f1f2;
+}
+
+.s4 div.square {
+    background: #d54156;
+}
+
+.s4 div.circle {
+    background: #5982a0;
+}
