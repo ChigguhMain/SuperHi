@@ -24,7 +24,16 @@ document.addEventListener("scroll", function(){
         if (pixels >= section.offsetTop) {
             clientTag.innerHTML = section.getAttribute("data-client");
             pageTag.innerHTML = section.getAttribute("data-page");
-        }
+            if (section.hasAttribute("data-is-dark")) {
+                headerTag.classList.add("white");
+                progressTag.classList.add("white");
+            } else {
+                headerTag.classList.remove("white");
+                progressTag.classList.remove("white");
+            };
+        };
+
+        
         
     })
 })

@@ -22,11 +22,17 @@ header {
     top: 36px;
     left: 36px;
     z-index: 1;
+    transition: color 0.2s;
 }
 
-.white {
-    color: white;
+header.white {
+    color: #ffffff;
 }
+
+div.progress.white {
+    background: white;
+}
+
 
 section {
     display: flex;
@@ -108,4 +114,5 @@ div.progress {
     left: 0;
     background: black;
     z-index: 1;
+    transition: background 0.2s;
 }
