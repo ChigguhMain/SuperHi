@@ -32,24 +32,23 @@ document.addEventListener("scroll", function(){
                 progressTag.classList.remove("white");
             };
         };
-
-        
-        
     })
-})
-
-
-
-document.addEventListener("scroll", function() {
     // What ever your scroll position, find the pageYOffset value of the middle of the window.
     const topViewport = window.pageYOffset;
     const midViewport = topViewport + (window.innerHeight / 2);
 
     sections.forEach(section => {
         const topSection = section.offsetTop;
-        const midSection = topSection / (section.offsetHeight / 2);
+        const midSection = topSection + (section.offsetHeight / 2);
 
         const distanceToSection = midViewport - midSection;
-        console.log(distanceToSection);
+
+        const parallaxTags = section.querySelectorAll(`[data-parallax]`);
+
+        // Loop over each parallax tag
+        parallaxTags.forEach(tag => {
+            const speed = parseFloat(tag.getAttribute("data-parallax"));
+            tag.style.transform = `translate(0px, ${distanceToSection * speed}px)`;
+        })
     })
 })
